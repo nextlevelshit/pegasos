@@ -1,0 +1,34 @@
+{
+  "name": "pegasos",
+  "version": "1.0.0-0",
+  "description": "Random Splines Generator for WebGL Canvas and SVG",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nextlevelshit/pegasos.git"
+  },
+  "author": "Michael Czechowski <mail@dailysh.it>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "example:contacts": "parcel examples/contacts/index.html --open",
+    "example:document": "parcel examples/document/index.html --open",
+    "example:dictionary": "parcel examples/dictionary/index.html --open",
+    "build": "parcel build ./src/index.js --out-dir ./lib"
+  },
+  "devDependencies": {
+    "sass": "^1.17.3",
+    "typescript": "^3.3.3333"
+  },
+  "bugs": {
+    "url": "https://github.com/nextlevelshit/pegasos/issues"
+  },
+  "homepage": "https://github.com/nextlevelshit/pegasos#readme",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {},
+  "keywords": [
+    "ui",
+    "concept"
+  ]
+}

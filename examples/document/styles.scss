@@ -1,0 +1,33 @@
+@import '../../src/styles/variables';
+
+$h2-size: 9rem;
+
+h3 {
+  font-size: 140%;
+}
+
+article {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  padding: 3rem 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-items: center;
+  flex-flow: column;
+
+  section {
+    position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    top: 0;
+    width: 80vw;
+    max-width: 60rem;
+    background: $background-color;
+    padding: 0 0 4rem $h2-size;
+    transition: color 260ms ease-in-out;
+  }
+}

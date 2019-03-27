@@ -1,0 +1,73 @@
+@import '../../src/styles/variables';
+
+$h2-size: 9rem;
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 200%;
+  padding-bottom: 1rem;
+  text-decoration: underline;
+  color: $text-color;
+} 
+
+h2 {
+  font-size: $h2-size;
+  line-height: $h2-size;
+  transform: translateX(- $h2-size);
+  background: $background-color;
+  color: transparentize($text-color, 0.1);
+  padding: 0 0 $h2-size 0;
+  width: $h2-size;
+}
+
+h3 {
+  font-size: 140%;
+}
+
+article {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  padding: 3rem 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-items: center;
+  flex-flow: column;
+
+  section {
+    position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    top: 0;
+    width: 80vw;
+    max-width: 60rem;
+    background: $background-color;
+    padding: 0 0 4rem $h2-size;
+    color: transparentize($text-color, 0.4);
+    transition: color 260ms ease-in-out;
+
+    &:hover {
+      color: $text-color;
+
+      h3 {
+        color: $text-color;
+      }
+    }
+
+    &.letter {
+      height: 0;
+      padding: 0;
+      z-index: 1;
+    }
+
+    h3 {
+      color: transparentize($text-color, 0.5);
+    }
+  }
+}

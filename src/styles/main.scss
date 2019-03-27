@@ -1,0 +1,12 @@
+@import 'variables';
+
+body,
+html {
+  background: $background-color;
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(242, 205, 191, 0.8);
+  line-height: 220%;
+  overflow: hidden;
+}
