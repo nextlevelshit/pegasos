@@ -3,7 +3,7 @@ import { config } from './../config'
 import './../../src/index.scss'
 import './styles.scss'
 
-const element = document.querySelector('#wrapper')
-const polygraph = new Polygraph(element, config)
+const wrapper = document.querySelector('#wrapper')
+const polygraph = new Polygraph(wrapper)
 
-console.log(polygraph)
+console.log(polygraph.wrapper)
